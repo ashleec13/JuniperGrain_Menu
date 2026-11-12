@@ -3,25 +3,192 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Menu | Juniper & Grain</title>
+  <meta name="theme-color" content="#f7f2e9">
+  <meta name="description" content="Freshly baked, thoughtfully brewed, and made for the moments worth slowing down at Juniper & Grain.">
+  <title>Juniper &amp; Grain | Bakery &amp; Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="img/logo.png" alt="Juniper & Grain logo" class="logo">
-    <h1>Our Menu</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Juniper and Grain home">
+        <svg class="brand-sprig" viewBox="0 0 42 48" aria-hidden="true">
+          <path d="M21 43C21 29 20 17 10 5M21 30c2-9 7-16 14-21M20 24C15 17 9 14 4 13M22 35c6-6 11-8 17-8" />
+          <path d="M10 5c0 5 2 8 7 10M34 9c-5 0-8 2-10 7M4 13c4-2 8-1 11 2M39 27c-4-3-8-3-12-1" />
+        </svg>
+        <span class="brand-name">Juniper <i>&amp;</i> Grain</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu-section">Menu</a>
+        <a href="#visit">Visit Us</a>
+      </nav>
+
+      <a class="button button-small button-solid header-order" href="#menu-section">Order Online <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
 
-  <main>
-    <!-- Your script builds one button per category in here. -->
-    <nav id="filters"></nav>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-rule"></span> A neighborhood bakery &amp; coffee shop</p>
+        <h1 id="hero-title">Good things<br>are <em>growing</em> here.</h1>
+        <p class="hero-intro">Freshly baked, thoughtfully brewed, and made for the moments worth slowing down.</p>
+        <div class="hero-actions">
+          <a class="button button-solid" href="#menu-section">Explore our menu <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#story">A little about us <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-mark" aria-hidden="true">✳</span>
+          <span>Baked with care.<br><i>Shared with joy.</i></span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="img/bakery-croissant.png" alt="Golden, flaky croissant on a ceramic plate in the morning light">
+        <div class="image-caption">
+          <span>From our oven</span>
+          <span class="caption-line"></span>
+          <span>with a little love</span>
+        </div>
+        <div class="hero-stamp" aria-hidden="true">
+          <span>GROWN WITH</span>
+          <svg viewBox="0 0 40 48">
+            <path d="M20 44V8M20 24C12 23 8 18 7 12c8 0 13 4 13 12ZM20 33c8-1 12-6 13-12-8 0-13 4-13 12Z" />
+          </svg>
+          <span>GOODNESS</span>
+        </div>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 <span></span> 04</div>
+    </section>
 
-    <!-- Loading and error messages go here. -->
-    <p id="status"></p>
+    <section class="welcome-strip" aria-label="Our promise">
+      <p>Good bread. Good coffee. Good company.</p>
+      <span class="strip-flourish" aria-hidden="true">✳</span>
+      <p>A softer start to your day.</p>
+      <span class="strip-flourish" aria-hidden="true">✳</span>
+      <p>Always room at the table.</p>
+    </section>
 
-    <!-- Your script builds the category headings and item cards in here. -->
-    <section id="menu"></section>
+    <section class="story section-pad" id="story" aria-labelledby="story-title">
+      <div class="story-photo">
+        <img src="img/coffee-latte.png" alt="Freshly poured latte with leaf-shaped foam beside a sunny window" loading="lazy">
+        <span class="photo-number">A daily ritual, made lovely</span>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow"><span class="section-number">01</span> A little about us</p>
+        <h2 id="story-title">A good day<br><em>starts somewhere.</em></h2>
+        <p class="story-lede">Somewhere warm, with the scent of something baking and a cup made just the way you like it.</p>
+        <p>Juniper &amp; Grain is a neighborhood place for unhurried mornings, familiar faces, and the small comforts that make an ordinary day feel special. Come for a flaky pastry or a thoughtful cup of coffee; stay for a little while.</p>
+        <a class="text-link text-link-dark" href="#visit">Come as you are <span aria-hidden="true">→</span></a>
+        <svg class="story-botanical" viewBox="0 0 100 120" aria-hidden="true">
+          <path d="M48 116C53 82 44 48 24 11M49 85c13-23 27-40 45-52M46 66C31 51 18 42 4 39M52 101c16-16 30-25 45-28" />
+          <path d="M24 11c0 14 6 22 17 26M69 45c-1-12 5-20 18-25M4 39c12-4 22-1 29 8M97 73c-13-4-24-1-33 9" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu-section" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="section-number">02</span> Made for the table</p>
+          <h2 id="menu-title">A little something<br><em>for every craving.</em></h2>
+        </div>
+        <p class="section-aside">Good mornings begin here.<br>Find a new favorite, or come back to an old one.</p>
+      </div>
+      <div class="menu-frame">
+        <div class="menu-topline">
+          <span>Fresh from the counter</span>
+          <span class="menu-topline-flourish" aria-hidden="true">✳</span>
+          <span>01 / Made with care</span>
+        </div>
+        <nav id="filters" class="filters" aria-label="Filter menu by category"></nav>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+        <section id="menu" class="menu-list" aria-label="Menu items"></section>
+      </div>
+    </section>
+
+    <section class="favorites section-pad" aria-labelledby="favorites-title">
+      <div class="favorites-heading">
+        <p class="eyebrow"><span class="section-number">03</span> A few things we love</p>
+        <h2 id="favorites-title">Little pleasures,<br><em>made daily.</em></h2>
+        <p>For the first sip, the last crumb, and every good moment in between.</p>
+      </div>
+      <div class="favorite-grid">
+        <article class="favorite-card favorite-card-large">
+          <div class="favorite-image"><img src="img/bakery-croissant.png" alt="Buttery golden croissant" loading="lazy"><span class="favorite-number">01</span></div>
+          <div class="favorite-caption"><h3>The morning croissant</h3><span>Flaky, golden, gone too soon</span></div>
+        </article>
+        <article class="favorite-card favorite-card-offset">
+          <div class="favorite-image"><img src="img/bakery-cinnamon.png" alt="Cinnamon pastry dusted with sugar" loading="lazy"><span class="favorite-number">02</span></div>
+          <div class="favorite-caption"><h3>A cinnamon kind of day</h3><span>Warm spice, soft center</span></div>
+        </article>
+        <article class="favorite-card favorite-card-third">
+          <div class="favorite-image"><img src="img/Cinnamon-dusted chai latte-7.png" alt="Creamy chai latte with cinnamon" loading="lazy"><span class="favorite-number">03</span></div>
+          <div class="favorite-caption"><h3>Chai, steeped slowly</h3><span>Comfort in your favorite cup</span></div>
+        </article>
+      </div>
+      <a class="button button-outline" href="#menu-section">See what's on the menu <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit-art" aria-hidden="true">
+        <svg viewBox="0 0 180 220">
+          <path d="M87 214C94 151 82 81 47 17M89 164c22-38 49-67 81-87M84 125C60 98 37 81 11 75M95 191c26-27 53-44 82-50" />
+          <path d="M47 17c0 24 11 39 31 47M128 99c-2-23 9-38 32-48M11 75c22-8 41-2 55 15M177 141c-24-8-45-2-62 16" />
+          <circle cx="87" cy="14" r="4" />
+        </svg>
+      </div>
+      <div class="visit-content">
+        <p class="eyebrow"><span class="section-number">04</span> Your seat is waiting</p>
+        <h2 id="visit-title">Make yourself<br><em>at home.</em></h2>
+        <p>For a quick coffee, a long catch-up, or something lovely to take home. We’ll save a little goodness for you.</p>
+        <a class="button button-light" href="#menu-section">Come visit us <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="visit-mark" aria-hidden="true">
+        <span>NEIGHBORHOOD<br>BAKERY</span>
+        <svg viewBox="0 0 52 52"><path d="M26 5v42M26 24C16 23 11 17 10 9c10 0 16 5 16 15ZM26 36c10-1 15-7 16-15-10 0-16 5-16 15Z" /></svg>
+        <span>COME ON IN</span>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#home" aria-label="Juniper and Grain home">
+          <svg class="brand-sprig" viewBox="0 0 42 48" aria-hidden="true">
+            <path d="M21 43C21 29 20 17 10 5M21 30c2-9 7-16 14-21M20 24C15 17 9 14 4 13M22 35c6-6 11-8 17-8" />
+            <path d="M10 5c0 5 2 8 7 10M34 9c-5 0-8 2-10 7M4 13c4-2 8-1 11 2M39 27c-4-3-8-3-12-1" />
+          </svg>
+          <span class="brand-name">Juniper <i>&amp;</i> Grain</span>
+        </a>
+        <p>Freshly baked, thoughtfully brewed.<br>Good things are growing here.</p>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-label">Find your way</p>
+        <a href="#story">Our story</a>
+        <a href="#menu-section">The menu</a>
+        <a href="#visit">Visit us</a>
+      </div>
+      <div class="footer-note">
+        <p class="footer-label">A little reminder</p>
+        <p>Take the slow morning.<br>Have the second pastry.</p>
+        <span aria-hidden="true">✳</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Juniper &amp; Grain</span>
+      <span>Made with care, and a little butter.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
