@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f2e9">
+  <meta name="theme-color" content="#fff9f4">
   <meta name="description" content="Freshly baked, thoughtfully brewed, and made for the moments worth slowing down at Juniper & Grain.">
   <title>Juniper &amp; Grain | Bakery &amp; Coffee</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,11 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
+    <div class="holiday-ribbon" aria-label="The Christmas season at Juniper and Grain">
+      <span class="ribbon-spark" aria-hidden="true">✦</span>
+      A little Christmas cheer, baked fresh each morning
+      <span class="ribbon-spark" aria-hidden="true">✦</span>
+    </div>
     <div class="header-inner">
       <a class="brand" href="#home" aria-label="Juniper and Grain home">
         <svg class="brand-sprig" viewBox="0 0 42 48" aria-hidden="true">
@@ -40,6 +45,7 @@
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-rule"></span> A neighborhood bakery &amp; coffee shop</p>
+        <p class="holiday-kicker"><span aria-hidden="true">✳</span> The Christmas season at Juniper &amp; Grain</p>
         <h1 id="hero-title">Good things<br>are <em>growing</em> here.</h1>
         <p class="hero-intro">Freshly baked, thoughtfully brewed, and made for the moments worth slowing down.</p>
         <div class="hero-actions">
@@ -53,17 +59,20 @@
       </div>
       <div class="hero-visual">
         <img src="img/bakery-croissant.png" alt="Golden, flaky croissant on a ceramic plate in the morning light">
+        <div class="hero-postcard" aria-hidden="true">
+          <span class="postcard-issue">Christmas edition · No. 01</span>
+          <span class="postcard-rule"></span>
+          <span class="postcard-note">Warm from<br>the oven</span>
+          <span class="postcard-seal">J<span>&amp;</span>G</span>
+        </div>
         <div class="image-caption">
           <span>From our oven</span>
           <span class="caption-line"></span>
           <span>with a little love</span>
         </div>
-        <div class="hero-stamp" aria-hidden="true">
-          <span>GROWN WITH</span>
-          <svg viewBox="0 0 40 48">
-            <path d="M20 44V8M20 24C12 23 8 18 7 12c8 0 13 4 13 12ZM20 33c8-1 12-6 13-12-8 0-13 4-13 12Z" />
-          </svg>
-          <span>GOODNESS</span>
+        <div class="hero-inset">
+          <img src="img/Cinnamon-dusted chai latte-7.png" alt="Creamy chai latte dusted with cinnamon">
+          <span>Something warm<br>for the walk home</span>
         </div>
       </div>
       <div class="hero-index" aria-hidden="true">01 <span></span> 04</div>
@@ -81,6 +90,7 @@
       <div class="story-photo">
         <img src="img/coffee-latte.png" alt="Freshly poured latte with leaf-shaped foam beside a sunny window" loading="lazy">
         <span class="photo-number">A daily ritual, made lovely</span>
+        <span class="story-photo-seal" aria-hidden="true">A GOOD<br>PLACE TO<br>LAND</span>
       </div>
       <div class="story-copy">
         <p class="eyebrow"><span class="section-number">01</span> A little about us</p>
@@ -96,12 +106,15 @@
     </section>
 
     <section class="menu-section section-pad" id="menu-section" aria-labelledby="menu-title">
-      <div class="section-heading">
-        <div>
+      <div class="menu-intro">
+        <div class="menu-heading">
           <p class="eyebrow"><span class="section-number">02</span> Made for the table</p>
           <h2 id="menu-title">A little something<br><em>for every craving.</em></h2>
         </div>
-        <p class="section-aside">Good mornings begin here.<br>Find a new favorite, or come back to an old one.</p>
+        <div class="menu-aside">
+          <span class="aside-stamp" aria-hidden="true">J&amp;G<br>EST. DAILY</span>
+          <p class="section-aside">Good mornings begin here.<br>Find a new favorite, or come back to an old one.</p>
+        </div>
       </div>
       <div class="menu-frame">
         <div class="menu-topline">
@@ -113,6 +126,7 @@
         <p id="status" class="status" role="status" aria-live="polite"></p>
         <section id="menu" class="menu-list" aria-label="Menu items"></section>
       </div>
+      <p class="menu-footnote"><span aria-hidden="true">✳</span> Something lovely is always coming out of the oven.</p>
     </section>
 
     <section class="favorites section-pad" aria-labelledby="favorites-title">
@@ -139,18 +153,15 @@
     </section>
 
     <section class="visit" id="visit" aria-labelledby="visit-title">
-      <div class="visit-art" aria-hidden="true">
-        <svg viewBox="0 0 180 220">
-          <path d="M87 214C94 151 82 81 47 17M89 164c22-38 49-67 81-87M84 125C60 98 37 81 11 75M95 191c26-27 53-44 82-50" />
-          <path d="M47 17c0 24 11 39 31 47M128 99c-2-23 9-38 32-48M11 75c22-8 41-2 55 15M177 141c-24-8-45-2-62 16" />
-          <circle cx="87" cy="14" r="4" />
-        </svg>
-      </div>
-      <div class="visit-content">
+      <div class="visit-copy">
         <p class="eyebrow"><span class="section-number">04</span> Your seat is waiting</p>
         <h2 id="visit-title">Make yourself<br><em>at home.</em></h2>
         <p>For a quick coffee, a long catch-up, or something lovely to take home. We’ll save a little goodness for you.</p>
         <a class="button button-light" href="#menu-section">Come visit us <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="visit-photo">
+        <img src="img/bakery-cinnamon.png" alt="Fresh cinnamon pastry ready to share" loading="lazy">
+        <span class="visit-photo-caption">Something warm is waiting</span>
       </div>
       <div class="visit-mark" aria-hidden="true">
         <span>NEIGHBORHOOD<br>BAKERY</span>
